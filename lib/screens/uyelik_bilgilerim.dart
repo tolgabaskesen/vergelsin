@@ -75,11 +75,11 @@ class _UyelikBilgilerimState extends State<UyelikBilgilerim> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 8, right: 8),
+                margin: EdgeInsets.only(left: 8, right: 8, top: 8),
                 height: size.height * 0.7,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                    color: Colors.red),
+                    color: arkaplanRenk),
               ),
             ],
           ),

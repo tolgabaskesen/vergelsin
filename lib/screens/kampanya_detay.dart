@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vergelsin/utils/color.dart';
 
 class KampanyaDetay extends StatefulWidget {
   const KampanyaDetay({Key? key}) : super(key: key);
@@ -13,8 +14,8 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kampanya Detay"),backgroundColor: Colors.blue[900],
-        
+        title: Text("Kampanya Detay"),
+        backgroundColor: Colors.blue[900],
       ),
       body: Center(
         child: Column(
@@ -55,8 +56,20 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(
+            right: size.width * 0.005, left: size.width * 0.005),
+        child: Container(
+          width: size.width * 0.9,
+          height: size.height * 0.07,
+          child: ElevatedButton(
+            onPressed: () {},
+            child: Text("ÜRÜNÜ GÖSTER"),
+            style: ElevatedButton.styleFrom(
+              primary: anaRenkKoyu,
+            ),
+          ),
+        ),
       ),
     );
   }
