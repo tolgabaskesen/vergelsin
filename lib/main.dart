@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
+import 'package:vergelsin/screens/kampanya_detay.dart';
 import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 import 'package:vergelsin/utils/color.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         //EKLENECEK HER YENİ SAYFA BURAYA ROUTE EDİLECEK!!!
         "/deneme_screen": (context) => DenemeScreen(),
         "/uyelik_bilgilerim": (context) => UyelikBilgilerim(),
+        "/kampanya_detay": (context) => KampanyaDetay(),
       },
     );
   }
@@ -67,6 +69,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "Uyelik Bilgilerim",
                 () => Navigator.pushNamed(context, "/uyelik_bilgilerim"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "Kampanya Detay",
+                () => Navigator.pushNamed(context, "/kampanya_detay"),
               ),
             ],
           ),
