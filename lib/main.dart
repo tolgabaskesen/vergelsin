@@ -34,11 +34,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: anaRenk,
         centerTitle: true,
-        title: Text(widget.title),
+        title: Container(
+          width: size.width * 0.3,
+          child: Image.asset(
+            "assets/app_logo.png",
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Container(
