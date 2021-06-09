@@ -17,7 +17,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
         title: Text("Kampanya Detay"),
         backgroundColor: Colors.blue[900],
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           /* mainAxisAlignment: MainAxisAlignment.center, */
           /*  crossAxisAlignment: CrossAxisAlignment.center, */
@@ -58,9 +58,9 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
       ),
       floatingActionButton: Padding(
         padding: EdgeInsets.only(
-            right: size.width * 0.005, left: size.width * 0.005),
+            right: size.width * 0.025, left: size.width * 0.025),
         child: Container(
-          width: size.width * 0.9,
+          width: size.width * 0.87,
           height: size.height * 0.07,
           child: ElevatedButton(
             onPressed: () {},
