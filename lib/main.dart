@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'VerGelsin APP',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        bottomSheetTheme:
+            BottomSheetThemeData(backgroundColor: Colors.transparent),
       ),
       home: MyHomePage(title: 'VerGelsin APP'),
       debugShowCheckedModeBanner: false,

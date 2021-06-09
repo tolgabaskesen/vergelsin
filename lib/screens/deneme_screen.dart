@@ -28,7 +28,7 @@ Widget navBar(BuildContext context) {
   return Container(
     width: size.width,
     height: size.height * 0.12,
-    color: arkaplanRenk,
+    color: Colors.transparent,
     alignment: Alignment.bottomCenter,
     child: Stack(
       children: [

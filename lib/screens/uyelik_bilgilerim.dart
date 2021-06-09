@@ -16,18 +16,24 @@ class _UyelikBilgilerimState extends State<UyelikBilgilerim> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: genelAppBar(context, "Üyelik Bilgilerim"),
-      bottomNavigationBar: navBar(context),
+      //bottomNavigationBar: navBar(context),
+      bottomSheet: navBar(context),
       body: SingleChildScrollView(
         child: Container(
           width: size.width,
           height: size.height,
-          color: arkaplanRenk,
+          color: Colors.black,
           child: Column(
             children: [
               Container(
                 margin: EdgeInsets.only(left: 8, right: 8),
                 height: size.height * 0.07,
-                color: Colors.blue,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10),
+                    ),
+                    color: Colors.white),
                 child: Padding(
                   padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                   child: Row(
@@ -35,7 +41,13 @@ class _UyelikBilgilerimState extends State<UyelikBilgilerim> {
                     children: [
                       Row(
                         children: [
-                          Image.asset("assets/icons/profilephoto.png")
+                          Image.asset("assets/icons/profilephoto.png"),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10.0),
+                            child: Text("Miraç Yıldırım",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 16)),
+                          ),
                         ],
                       ),
                       GestureDetector(
@@ -61,6 +73,13 @@ class _UyelikBilgilerimState extends State<UyelikBilgilerim> {
                     ],
                   ),
                 ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 8, right: 8),
+                height: size.height * 0.7,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: Colors.red),
               ),
             ],
           ),
