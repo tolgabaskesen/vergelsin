@@ -18,7 +18,7 @@ class _DenemeScreenState extends State<DenemeScreen> {
     return Scaffold(
       appBar: genelAppBar(context, "Deneme"),
       body: Container(),
-      bottomNavigationBar: navBar(context),
+      bottomSheet: navBar(context),
     );
   }
 }
