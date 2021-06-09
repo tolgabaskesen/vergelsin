@@ -16,7 +16,7 @@ class _DenemeScreenState extends State<DenemeScreen> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: genelAppBar(context,"Deneme"),
+      appBar: genelAppBar(context, "Deneme"),
       body: Container(),
       bottomNavigationBar: navBar(context),
     );
@@ -87,6 +87,7 @@ Widget navBar(BuildContext context) {
               borderRadius: BorderRadius.all(Radius.circular(100)),
             ),
             child: GestureDetector(
+              onTap: () => print("tolga"),
               child: Image.asset("assets/bottom_bar_icon.png"),
             )),
       ],
