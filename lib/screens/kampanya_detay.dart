@@ -15,7 +15,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Kampanya Detay"),
-        backgroundColor: Colors.blue[900],
+        backgroundColor: anaRenkKoyu,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -28,7 +28,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
               height: size.height * 0.25,
               child: Image.asset(
                 "assets/promotion/promo1.png",
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
               ),
             ),
             Container(
@@ -38,7 +38,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 15,
-                    color: Colors.blue[900]),
+                    color: anaRenkKoyu),
               ),
             ),
             Container(
@@ -48,10 +48,62 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
               ),
             ),
             Container(
+              color: arkaplanRenk,
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.all(8),
-              child: Text(
-                "Kampanya Koşulları",
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Kampanya Koşulları",
+                    style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    color: Colors.grey),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·It is a long established fact that a reader will be ditracted by the readable content of a page when looking at its layout.",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+              ),
+                  ),
+                ],
               ),
             ),
           ],
