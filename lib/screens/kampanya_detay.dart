@@ -48,6 +48,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
               ),
             ),
             Container(
+              alignment: Alignment.centerLeft,
               margin: EdgeInsets.all(8),
               child: Text(
                 "Kampanya Koşulları",
