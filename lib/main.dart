@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
+import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 import 'package:vergelsin/utils/color.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         //EKLENECEK HER YENİ SAYFA BURAYA ROUTE EDİLECEK!!!
         "/deneme_screen": (context) => DenemeScreen(),
+        "/uyelik_bilgilerim": (context) => UyelikBilgilerim(),
       },
     );
   }
@@ -57,6 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "Deneme Screen",
                 () => Navigator.pushNamed(context, "/deneme_screen"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "Uyelik Bilgilerim",
+                () => Navigator.pushNamed(context, "/uyelik_bilgilerim"),
               ),
             ],
           ),
