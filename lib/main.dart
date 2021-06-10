@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'VerGelsin APP',
       theme: ThemeData(
+        primaryColor: anaRenk,
         primarySwatch: Colors.blue,
         bottomSheetTheme:
             BottomSheetThemeData(backgroundColor: Colors.transparent),
