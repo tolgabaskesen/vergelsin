@@ -90,6 +90,23 @@ class _UyelikBilgilerimState extends State<UyelikBilgilerim> {
                       acilirTarih(context),
                       textField(context, "Şifre"),
                       textField(context, "Yeni Şifre"),
+                      Container(
+                        margin: EdgeInsets.only(left: 8, right: 8, top: 8),
+                        height: size.height * 0.06,
+                        width: size.width,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "KAYDET",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: size.width * 0.06),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: anaRenk,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
