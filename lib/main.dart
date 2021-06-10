@@ -84,8 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
               sayfaGecis(
                 //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
                 context,
-                "Giriş Ekranı",
-                () => Navigator.pushNamed(context, "/first_screen"),
+                "Urun Ekranı",
+                () => Navigator.pushNamed(context, "/urun"),
               ),
             ],
           ),
