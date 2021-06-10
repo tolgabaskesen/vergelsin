@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
 import 'package:vergelsin/screens/first_screen.dart';
 import 'package:vergelsin/screens/kampanya_detay.dart';
+import 'package:vergelsin/screens/sikca_sorulan_sorular.dart';
 import 'package:vergelsin/screens/urun.dart';
 import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 import 'package:vergelsin/utils/color.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         "/kampanya_detay": (context) => KampanyaDetay(),
         "/urun": (context) => Urun(),
         "/first_screen": (context) => FirstScreen(),
+        "/sikca_sorulan_sorular": (context) => SikcaSorulanSorular(),
       },
     );
   }
@@ -86,6 +88,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "Urun Ekranı",
                 () => Navigator.pushNamed(context, "/urun"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "Sıkça Sorulan Sorular Ekranı",
+                () => Navigator.pushNamed(context, "/sikca_sorulan_sorular"),
               ),
             ],
           ),

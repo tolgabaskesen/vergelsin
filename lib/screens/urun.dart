@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 
 import 'package:vergelsin/utils/color.dart';
 
@@ -18,11 +19,7 @@ class _UrunState extends State<Urun> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text("Ürün"),
-          centerTitle: true,
-          backgroundColor: anaRenkKoyu,
-        ),
+        appBar: genelAppBar(context, "Ürün"),
         body: SingleChildScrollView(
           child: Column(
             children: [
