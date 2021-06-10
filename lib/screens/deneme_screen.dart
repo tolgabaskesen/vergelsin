@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 import 'package:vergelsin/utils/color.dart';
 
@@ -14,7 +13,6 @@ class DenemeScreen extends StatefulWidget {
 class _DenemeScreenState extends State<DenemeScreen> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: genelAppBar(context, "Deneme"),
       body: Container(),
