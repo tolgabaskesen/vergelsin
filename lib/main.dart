@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
 import 'package:vergelsin/screens/kampanya_detay.dart';
+import 'package:vergelsin/screens/urun.dart';
 import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
 import 'package:vergelsin/utils/color.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         "/deneme_screen": (context) => DenemeScreen(),
         "/uyelik_bilgilerim": (context) => UyelikBilgilerim(),
         "/kampanya_detay": (context) => KampanyaDetay(),
+        "/urun": (context) => Urun(),
       },
     );
   }
