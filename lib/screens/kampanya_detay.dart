@@ -15,6 +15,7 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Kampanya Detay"),
+        centerTitle: true,
         backgroundColor: anaRenkKoyu,
       ),
       body: SingleChildScrollView(
@@ -57,51 +58,54 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
                   Text(
                     "Kampanya Koşulları",
                     style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    color: Colors.grey),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                        color: Colors.grey),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·It is a long established fact that a reader will be ditracted by the readable content of a page when looking at its layout.",
-              ),
+                      " ·It is a long established fact that a reader will be ditracted by the readable content of a page when looking at its layout.",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-              ),
+                      " ·Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+                    ),
+                  ),
+                  SizedBox(
+                    height: size.height * 0.1,
                   ),
                 ],
               ),
@@ -117,7 +121,11 @@ class _KampanyaDetayState extends State<KampanyaDetay> {
           height: size.height * 0.07,
           child: ElevatedButton(
             onPressed: () {},
-            child: Text("ÜRÜNÜ GÖSTER"),
+            child: Text(
+              "ÜRÜNÜ GÖSTER",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, fontSize: size.width * 0.05),
+            ),
             style: ElevatedButton.styleFrom(
               primary: anaRenkKoyu,
             ),
