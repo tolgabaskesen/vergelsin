@@ -38,6 +38,7 @@ class _SikcaSorulanSorularState extends State<SikcaSorulanSorular> {
             Soru(baslik: "Where does it come from?"),
             Soru(baslik: "Where does it come from?"),
             Soru(baslik: "Where does it come from?"),
+            Soru(baslik: "Where does it come from?"),
             SizedBox(
               height: size.height * 0.1,
             )
