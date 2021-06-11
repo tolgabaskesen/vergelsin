@@ -55,9 +55,8 @@ class _UrunState extends State<Urun> {
           ),
         ),
         floatingActionButton: Container(
-            /*  width: size.width * 0.87,
-            height: size.height * 0.07, */
-            color: Color(0xBBFFFFFF),
+           
+            color: Color(0xFFFFFF),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -145,7 +144,7 @@ class _UrunState extends State<Urun> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //crossAxisAlignment: CrossAxisAlignment.center,
+           
             children: [
               Container(
                 width: size.width * 0.25,
@@ -157,7 +156,7 @@ class _UrunState extends State<Urun> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // margin: EdgeInsets.fromLTRB(60, 0, 0, 8),
+                   
                       width: size.width * 0.55,
                       height: size.height * 0.25,
                       child: Image.asset(
@@ -166,7 +165,7 @@ class _UrunState extends State<Urun> {
                       ),
                     ),
                     Container(
-                      //margin: EdgeInsets.fromLTRB(60, 0, 0, 0),
+                      
                       color: anaRenkKoyu,
                       child: Text(
                         "%10 İNDİRİM!",
@@ -193,7 +192,7 @@ class _UrunState extends State<Urun> {
               Container(
                 width: size.width * 0.25,
                 child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
+                 
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
