@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
         "/arama": (context) => Arama(),
         "/profile_screen": (context) => ProfileScreen(),
         "/iletisim_tercihleri": (context) => IletisimTercihleri(),
+        "/siparis_durumu": (context) => DenemeScreen(),
       },
     );
   }
@@ -118,6 +119,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "İletişim Tercihleri",
                 () => Navigator.pushNamed(context, "/iletisim_tercihleri"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "Sipariş Durumu",
+                () => Navigator.pushNamed(context, "/siparis_durumu"),
               ),
             ],
           ),
