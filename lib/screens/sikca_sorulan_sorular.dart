@@ -66,12 +66,12 @@ class _SikcaSorulanSorularState extends State<SikcaSorulanSorular> {
                   );
                 }),
             SizedBox(
-              height: size.height * 0.05,
+              height: size.height * 0.1,
             )
           ],
         ),
       ),
-      bottomNavigationBar: navBar(context),
+      bottomSheet: navBar(context),
     );
   }
 }

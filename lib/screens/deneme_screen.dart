@@ -50,7 +50,7 @@ Widget navBar(BuildContext context) {
               IconButton(
                   onPressed: () {},
                   icon: FaIcon(
-                    FontAwesomeIcons.home,
+                    FontAwesomeIcons.search,
                     color: bottomIconColor,
                   )),
               Container(
@@ -60,14 +60,14 @@ Widget navBar(BuildContext context) {
               IconButton(
                   onPressed: () {},
                   icon: FaIcon(
-                    FontAwesomeIcons.home,
+                    FontAwesomeIcons.shoppingCart,
                     color: bottomIconColor,
                   )),
               IconButton(
                   splashColor: bottomIconColor,
                   onPressed: () {},
                   icon: FaIcon(
-                    FontAwesomeIcons.home,
+                    FontAwesomeIcons.ellipsisH,
                     color: bottomIconColor,
                   )),
             ],

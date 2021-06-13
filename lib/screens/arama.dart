@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
 import 'package:vergelsin/screens/uyelik_bilgilerim.dart';
+import 'package:vergelsin/utils/color.dart';
 
 import 'package:vergelsin/widgets/kategori.dart';
 
@@ -57,7 +58,7 @@ class _AramaState extends State<Arama> {
             ],
           ),
         ),
-        bottomNavigationBar: navBar(context),
+        bottomSheet: navBar(context),
       ),
     );
   }
@@ -66,7 +67,7 @@ class _AramaState extends State<Arama> {
     Size size = MediaQuery.of(context).size;
 
     return Container(
-      color: Colors.blue[50],
+      color: arkaplanRenk,
       child: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Padding(

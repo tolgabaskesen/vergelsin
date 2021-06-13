@@ -419,6 +419,7 @@ class _FirstScreenState extends State<FirstScreen> {
     );
   }
 
+  // ignore: unused_field
   late Timer _timer;
   int _start = 120;
 

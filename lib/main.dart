@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vergelsin/screens/arama.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
 import 'package:vergelsin/screens/first_screen.dart';
+import 'package:vergelsin/screens/hesabim.dart';
 import 'package:vergelsin/screens/kampanya_detay.dart';
 import 'package:vergelsin/screens/sikca_sorulan_sorular.dart';
 import 'package:vergelsin/screens/urun.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         "/first_screen": (context) => FirstScreen(),
         "/sikca_sorulan_sorular": (context) => SikcaSorulanSorular(),
         "/arama": (context) => Arama(),
+        "/profile_screen": (context) => ProfileScreen(),
       },
     );
   }
@@ -102,6 +104,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "Arama Ekranı",
                 () => Navigator.pushNamed(context, "/arama"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "Hesabım",
+                () => Navigator.pushNamed(context, "/profile_screen"),
               ),
             ],
           ),
