@@ -58,7 +58,7 @@ class _SikcaSorulanSorularState extends State<SikcaSorulanSorular> {
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: soruadedi,
-                itemBuilder: (context, soruadedi) {
+                itemBuilder: (context, i) {
                   return Soru(
                     soru: "Where does it come from?",
                     cevap:
