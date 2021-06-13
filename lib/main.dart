@@ -3,6 +3,7 @@ import 'package:vergelsin/screens/arama.dart';
 import 'package:vergelsin/screens/deneme_screen.dart';
 import 'package:vergelsin/screens/first_screen.dart';
 import 'package:vergelsin/screens/hesabim.dart';
+import 'package:vergelsin/screens/iletisim_tercihleri.dart';
 import 'package:vergelsin/screens/kampanya_detay.dart';
 import 'package:vergelsin/screens/sikca_sorulan_sorular.dart';
 import 'package:vergelsin/screens/urun.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "/sikca_sorulan_sorular": (context) => SikcaSorulanSorular(),
         "/arama": (context) => Arama(),
         "/profile_screen": (context) => ProfileScreen(),
+        "/iletisim_tercihleri": (context) => IletisimTercihleri(),
       },
     );
   }
@@ -110,6 +112,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 "Hesabım",
                 () => Navigator.pushNamed(context, "/profile_screen"),
+              ),
+              sayfaGecis(
+                //Oluşturulan her sayfa için geçişler buraya button olarak aynı şekilde tanımlanacak.
+                context,
+                "İletişim Tercihleri",
+                () => Navigator.pushNamed(context, "/iletisim_tercihleri"),
               ),
             ],
           ),
